@@ -1,0 +1,39 @@
+.sleeping {
+    text-align: center;
+    background-image:linear-gradient(120deg, #f1beb2, #fde4ad);
+    border: 20px solid white;
+}
+
+.sleeping-row{
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.sleeping-row h2{
+    padding: 60px 0;
+}
+
+.sleeping-item, .travel-item {
+    width: 25%;
+    padding: 0 2%;
+    display: inline-block;
+}
+
+.sleeping-item h3 {
+    margin-bottom: 20px;
+}
+
+.travel-row {
+    width: 100%;
+    padding: 50px 0 40px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.travel-item {
+    width: 20%;
+}
+
+.travel-info {
+    margin-top: 40px;
+}

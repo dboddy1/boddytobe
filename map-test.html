@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+          display: inline;
+    padding: 0;
+    margin: 0;
+        }
+
+       #map {
+        height: 400px;
+        width: 50%;
+        display: inline-block;
+       }
+
+       .wrapper {
+         background-color: gray;
+       }
+
+       .address-left, .address-right {
+            background-color: #cccccc;
+            width: 25%;
+            height: calc(100% - 60px);
+            padding: 60px 0 0;
+            float: left;
+            /*position: relative;*/
+        }
+
+        .address-right {
+            float: right;
+        }
+
+       .church-address {
+          /*position: absolute;*/
+          text-align: center;
+          /*left: 25%;*/
+          /*bottom: 160px;*/
+       }
+
+       .venue-address {
+            /*position: absolute;*/
+            text-align: center;
+            right: 25%;
+            bottom: 160px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h3>My Google Maps Demo</h3>
+    <div class="wrapper">
+    
+
+    <div class="address-left">
+                <div class="church-address">
+                    <h3>Church Address</h3>
+                    <p>
+                        address line one
+                        <br>
+                        address line two
+                        <br>
+                        address line three
+                        <br>
+                    </p>
+                    <a href="#" >Church Website</a>
+                </div>
+            </div>
+    <div id="map"></div>
+
+    <div class="address-right">
+                <div class="venue-address">
+                    <h3>Venue Address</h3>
+                    <p>
+                        address line one
+                        <br>
+                        address line two
+                        <br>
+                        address line three
+                        <br>
+                    </p>
+                    <a href="#" >Venue Website</a>
+                </div>
+    </div>
+    </div>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPypMbge_vDB-mgY4qBMfeVGGag36AT5c&callback=initMap">
+    </script>
+  </body>
+</html>

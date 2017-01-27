@@ -1,0 +1,193 @@
+<!--<!DOCTYPE HTML>-->
+<html>
+    <head>
+        <title>Boddy To Be</title>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/rsvp.css">
+        <link rel="stylesheet" href="styles/map.css">
+        <link rel="stylesheet" href="styles/travel.css">
+        <link rel="stylesheet" href="styles/events.css">
+        <link rel="icon" type="image/ico" href="#">
+    </head>
+    <body>
+        <header>
+            <div class="wedding-title">
+                <img src="images/wedding-date.png" alt="Wedding date 12 August 2017"/>
+                <img src="images/wedding-title.png" alt="Katt and David" width="400px"/>
+                <img src="images/wedding-subtitle.png" alt="be getting married." />
+            </div>
+            
+        </header>
+        <section class="RSVP">
+            <div class="RSVP-image-left"></div>
+            <div class="RSVP-image-right"></div>
+            <!--method="post" action="/form-to-email.php"-->
+            <form class="RSVP-form"  name="weddingRSVP" >
+                <div class="selection">
+                    <label for="yes">Hell Yeah</label>
+                    <input type="radio" id="yes" name="attending" value="true" />
+                    <label for="no">Sadly no</label>
+                    <input type="radio" id="no" name="attending" value="false" />
+                </div>
+                <br>
+                <label for="emotion">I / We are &nbsp;</label><input id="emotion" type="text" emotion="requirement"><label for="emotion">&nbsp;to</label><br>
+                <input id="reasonlineone" type="text" reason="requirement"><br>
+                <input id="reasonlinetwo" type="text" ><br>
+                <label for="diet">You should know, I'm a&nbsp;</label><input id="diet" type="text" diet="requirement"><br>
+                <label for="name">Peace and love,</label></br><input id="name" type="text" name="fullname" placeholder="Let us know who you are" /><br>
+                <input type="submit" value="RSVP">
+            </form>
+            <div>
+                <p>Being part of our day is all we ask, however if you'd like to give us a gift, a contribution towards our dream honeymoon would be greatly appreciated</p>
+            </div>
+        </section>
+
+        <!--google maps-->
+
+        <section>
+            <div class="map-wrapper">
+                <div class="map-address-left">
+                            <div class="church-address">
+                                <h3>Church of St. Mary</h3>
+                                <p>
+                                    Coach Drive
+                                    <br>
+                                    Harlton
+                                    <br>
+                                    Cambridge
+                                    <br>
+                                    CB23 1EN
+                                    <br>
+                                </p>
+                                <a href="http://www.harltonvillage.org.uk/" target="_blank">Visit church website</a>
+                            </div>
+                        </div>
+                <div id="map"></div>
+                <div class="map-address-right">
+                            <div class="venue-address">
+                                <h3>The Manor Barn</h3>
+                                <p>
+                                    Washpit Lane
+                                    <br>
+                                    Harlton
+                                    <br>
+                                    Cambridge
+                                    <br>
+                                    CB23 1EY
+                                    <br>
+                                </p>
+                                <a href="http://themanorbarn.com/" target="_blank">Visit venue website</a>
+                            </div>
+                </div>
+            </div>
+
+            <script>
+            function initMap() {
+                var uluru = {lat: 52.153, lng: 0.026};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: uluru,
+                mapTypeControl: false,
+                streetViewControl: false
+                });
+
+                var image = 'images/map-marker.png';
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                icon: image
+                });
+            }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPypMbge_vDB-mgY4qBMfeVGGag36AT5c&callback=initMap">
+            </script>
+
+        </section>
+
+        <!--sleeping + travelling-->
+
+        <section class="sleeping">
+            <div class="sleeping-row">
+                <h2>Sleeping + Travelling</h2>
+                <div class="sleeping-item">
+                    <h3>Hotel One</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+                <div class="sleeping-item">
+                    <h3>Hotel Two</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+                <div class="sleeping-item">
+                    <h3>Hotel Three</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+            </div>
+            <div class="sleeping-row">
+                <div class="sleeping-item">
+                    <h3>Hotel Four</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+                <div class="sleeping-item">
+                    <h3>Hotel Five</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+                <div class="sleeping-item">
+                    <h3>Hotel Six</h3>
+                    <p>address line one<br>address line two</p>
+                    <br>
+                    <a href="#" >Hotel Website</a>
+                </div>
+            </div>
+            <div class="travel-row">
+                <div class="travel-item">
+                    <h3>Panther Taxis</h3>
+                    <p>(01223) 715715</p>
+                    <br>
+                    <a href="https://www.panthertaxis.co.uk/" target="_blank">Book a Panther Taxi</a>
+                </div>
+                <div class="travel-item">
+                    <h3>A1 Cabco Taxis</h3>
+                    <p>(01223) 313131</p>
+                    <br>
+                    <a href="http://www.a1cabco.co.uk/" target="_blank">Book a A1 Cabco Taxi</a>
+                </div>
+                <div class="travel-item">
+                    <h3>CamCab Taxis</h3>
+                    <p>(01223) 706515</p>
+                    <br>
+                    <a href="http://www.camcab.co.uk/" target="_blank">Book a CamCab Taxi</a>
+                </div>
+                <div class="travel-item">
+                    <h3>The Trainline</h3>
+                    <p>copy in here</p>
+                    <br>
+                    <a href="https://www.thetrainline.com/" target="_blank">Buy your train tickets</a>
+                </div>
+                <div class="travel-info">
+                    <p>For those using taxis we would suggest booking in advance, as Cambridge taxi companies are very busy on Saturday nights.</p>
+                </div
+            </div>
+        </section>
+
+        <!--make it a weekend-->
+
+        <section class="weekend">
+            <h2>Make it a weekend</h2>
+            <p>Built by us</p>
+        </section>
+    </body>
+</html>
+
+

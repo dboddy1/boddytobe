@@ -1,0 +1,21 @@
+header {
+    width: 400px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.time-left {
+    margin-top: 20px;
+    float: left;
+}
+
+.time-right {
+    margin-top: 20px;
+    float: right;
+}
+
+.wedding-title {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
