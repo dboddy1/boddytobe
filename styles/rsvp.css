@@ -192,3 +192,9 @@ textarea:focus, input:focus {
 }
 
 /* Focus Styling Ends */
+
+    @media (max-width: 750px) {
+
+    .RSVP-image-left, .RSVP-image-right {
+        display: none;
+    } 
