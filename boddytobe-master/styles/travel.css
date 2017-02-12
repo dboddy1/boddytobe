@@ -1,0 +1,100 @@
+.sleeping {
+    display: block;
+    text-align: center;
+    background-image:linear-gradient(120deg, #f1beb2, #fde4ad);
+    border: 20px solid white;
+}
+
+.sleeping h2{
+    padding: 50px 0;
+}
+
+.sleeping-list, .travel-list {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	align-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sleeping-list {
+    margin-bottom: 20px;
+}
+
+.sleeping h2{
+    padding: 50px 0;
+}
+
+.sleeping-item, .travel-item {
+    width: 100%;
+  	flex-shrink: 0;
+    margin-bottom: 40px
+}
+
+.sleeping-item h3 {
+    margin-bottom: 20px;
+}
+
+.travel-list {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    padding-top: 60px;
+}
+
+.travel-info {
+     max-width: 80%;
+     margin: 0 auto 40px;
+}
+
+    @media (min-width: 450px) {
+
+        .sleeping-item, .travel-item {
+            width: calc(50% - 20px);
+            flex-shrink: 0;
+            margin-bottom: 50px
+        }
+    
+        @media (min-width: 650px) {
+
+            .sleeping h2{
+                padding: 60px 0;
+            }
+
+            .sleeping-list{
+                margin: 0 50px;
+            }
+
+            .sleeping-item {
+                width: calc(30% - 20px);
+                flex-shrink: 0;
+                margin-bottom: 40px
+            }
+
+            @media (min-width: 900px) {
+
+            .travel-item {
+                width: calc(25% - 10px);
+                flex-shrink: 0;
+                margin-bottom: 40px
+            }
+
+            .travel-info {
+                max-width: 600px;
+            }
+
+            @media (min-width: 1000px) {
+
+            .sleeping-list{
+                margin: 0 auto 20px;
+                /*max-width: 900px;*/
+                padding: 0 7%;
+            }
+
+            .travel-list {
+                padding: 60px 10% 0;
+            }
+
+            .travel-info {
+                max-width: 100%;
+            }
