@@ -3,41 +3,19 @@
     position: relative;
 }
 
-.RSVP-image-left {
-    width: 20%;
-    height: 1200px;
-    background-color: #a9d1cf;
-    float: left;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-image: url('backgroundimages/background-left.jpg');
-    background-position: left bottom;
-    background-repeat: no-repeat;
-}
-
-.RSVP-image-right {
-    width: 20%;
-    height: 1200px;
-    background-color: #a9d1cf;
-    float: left;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url('backgroundimages/background-right.jpg');
-    background-position: right bottom;
-    background-repeat: no-repeat;
+.RSVP-image-left, .RSVP-image-right {
+    width: 0;
 }
 
 .RSVP-form {
-    width: 40%;
+    width: 90%;
     margin: 50px auto 0;
     text-align: center;
 }
 
 .RSVP p {
-    width: 40%;
-    padding: 20px 0 60px;
+    width: 70%;
+    padding: 10px 0 40px;
 }
 
 .selection {
@@ -71,7 +49,19 @@ label {
     color: #000000;
     text-align: center;
     display: inline-block;
-    margin: 10px 0;   
+    margin: 50px 0 0;   
+}
+
+.selection label {
+    margin: 10px 0;
+}
+
+label[for="emotion"] {
+    margin: 50px 0 20px;
+}
+
+label[for="emotion_after"] {
+    margin: 20px 0 0;
 }
 
 input {
@@ -81,9 +71,18 @@ input {
     text-transform: uppercase;
     letter-spacing: 0.18em;
     line-height: 1.1em;
+    width: 92%;
     color: #467372;
     cursor:pointer;
     text-align: center;
+}
+
+input#emotion {
+    width: 80%;
+}
+
+input#name {
+    margin-top: 20px;
 }
 
 input[type=text] {
@@ -100,29 +99,6 @@ input[type=text] {
     cursor: pointer;
 }
 
-input#emotion{
-     width: 50%;
- }
-
-input#reasonlineone, input#reasonlinetwo {
-     width: calc(100% - 40px);
- }
-
-input#diet {
-    width: 30%;
-    margin: 40px 0;
-    text-align: left;
- }
-
-input#emotion {
-     margin-top: 40px;
- }
-
-input#name {
-    margin-top: 20px;
-    width: 60%;
- }
-
 input[type=submit] {
     color: #ffffff;
     text-align: center;
@@ -135,10 +111,6 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-}
-
-input[type=submit]:hover {
-    background:#467372; 
 }
 
 /* Placeholder Styling Starts */
@@ -187,14 +159,150 @@ input:active {
 input:focus {outline:0;}
 
 textarea:focus, input:focus {
-	/*background: #9ad6d4;*/
     border-bottom: 2px solid #467372;
 }
 
 /* Focus Styling Ends */
 
-    @media (max-width: 750px) {
+    @media (min-width: 600px) {
 
-    .RSVP-image-left, .RSVP-image-right {
-        display: none;
+    .RSVP-image-left {
+        width: 5%;
+        height: 1100px;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('backgroundimages/background-left.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    .RSVP-image-right {
+        width: 5%;
+        height: 1100px;
+        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('backgroundimages/background-right.png');
+        background-position: right top;
+        background-repeat: no-repeat;
     } 
+
+    .RSVP-form {
+        max-width: 500px;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+
+    .RSVP p {
+        width: 50%;
+        padding: 20px 0 40px;
+    }
+
+    input {
+        max-width: 500px;
+    }
+
+    input#emotion{
+        width: 84%;
+    }
+
+    input#name {
+        margin-top: 20px;
+        width: 60%;
+    }
+
+        @media (min-width: 750px) {
+
+         .RSVP-image-left {
+            width: 10%;
+            height: 1100px;
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('backgroundimages/background-left.png');
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+
+        .RSVP-image-right {
+            width: 10%;
+            height: 1100px;
+            float: left;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url('backgroundimages/background-right.jpg');
+            background-position: right top;
+            background-repeat: no-repeat;
+        }   
+    
+            @media (min-width: 900px) {
+
+            .RSVP-form {
+                max-width: 700px;
+                margin: 50px auto 0;
+                text-align: center;
+            }
+
+            .RSVP-image-left {
+                z-index: -1;
+                width: 30%;
+                height: 1100px;
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url('backgroundimages/background-left.png');
+                background-position: left top;
+                background-repeat: no-repeat;
+            }
+
+            .RSVP-image-right {
+                z-index: -1;
+                width: 30%;
+                height: 1100px;
+                float: left;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-image: url('backgroundimages/background-right.png');
+                background-position: right top;
+                background-repeat: no-repeat;
+            }
+
+            .RSVP p {
+                width: 40%;
+                padding: 20px 0 100px;
+            }
+
+            input {
+                max-width: 75%;
+            }
+
+            input[type=text] {
+                background-color: rgba(0, 0, 0, 0);
+            }   
+
+            input#emotion{
+                margin-top: 40px;
+                width: 50%;
+            }
+
+            input#diet {
+                width: 30%;
+                margin: 40px 0 0;
+                text-align: left;
+            }
+
+            input#name {
+                margin-top: 20px;
+                width: 75%;
+            }
+
+            input[type=submit]:hover {
+                background:#467372; 
+            }
