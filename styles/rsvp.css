@@ -235,7 +235,7 @@ textarea:focus, input:focus {
             position: absolute;
             top: 0;
             right: 0;
-            background-image: url('backgroundimages/background-right.jpg');
+            background-image: url('backgroundimages/background-right.png');
             background-position: right top;
             background-repeat: no-repeat;
         }   
