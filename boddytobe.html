@@ -1,7 +1,9 @@
-<!--<!DOCTYPE HTML>-->
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>Boddy To Be</title>
+        <!--<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700" rel="stylesheet">
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/rsvp.css">
@@ -13,34 +15,34 @@
     </head>
     <body>
         <header>
+            <div class="RSVP-image-left"></div>
             <div class="wedding-title">
-                <img src="images/wedding-date.png" alt="Wedding date 12 August 2017"/>
-                <img src="images/wedding-title.png" alt="Katt and David" width="400px"/>
-                <img src="images/wedding-subtitle.png" alt="be getting married." />
+                <!--<h3>12 August 2017</h3>-->
+                <img class="wedding-title-date" src="images/12_August_2017.png" alt="Wedding date 12 August 2017"/>
+                <img class="wedding-title-names" src="images/Katherine_and_David.png" alt="Katt and David"/>
+                <img class="wedding-subtitle"src="images/Be_Getting_Married.png" alt="be getting married." />
             </div>
-            
+            <div class="RSVP-image-right"></div>
         </header>
         <section class="RSVP">
-            <div class="RSVP-image-left"></div>
-            <div class="RSVP-image-right"></div>
             <!--method="post" action="/form-to-email.php"-->
             <form class="RSVP-form"  name="weddingRSVP" >
                 <div class="selection">
-                    <label for="yes">Hell Yeah</label>
+                    <label for="yes">HELL YEAH!</label>
                     <input type="radio" id="yes" name="attending" value="true" />
-                    <label for="no">Sadly no</label>
+                    <label for="no">SADLY NO</label>
                     <input type="radio" id="no" name="attending" value="false" />
                 </div>
                 <br>
-                <label for="emotion">I / We are &nbsp;</label><input id="emotion" type="text" emotion="requirement"><label for="emotion">&nbsp;to</label><br>
+                <label for="emotion">I / We are</label><input id="emotion" type="text" emotion="requirement"><label for="emotion_after">&nbsp;to</label><br>
                 <input id="reasonlineone" type="text" reason="requirement"><br>
                 <input id="reasonlinetwo" type="text" ><br>
-                <label for="diet">You should know, I'm a&nbsp;</label><input id="diet" type="text" diet="requirement"><br>
-                <label for="name">Peace and love,</label></br><input id="name" type="text" name="fullname" placeholder="Let us know who you are" /><br>
+                <label for="diet">Please note that I&#39;m a&nbsp;</label><input id="diet" type="text" diet="requirement"><br>
+                <label for="name">Peace and love,</label></br><input id="name" type="text" name="fullname" placeholder="Sign your names here" /><br>
                 <input type="submit" value="RSVP">
             </form>
             <div>
-                <p>Being part of our day is all we ask, however if you'd like to give us a gift, a contribution towards our dream honeymoon would be greatly appreciated</p>
+                <p>Yourself, your dance moves and laughter are all we ask, but should you wish to make a small donation to help fund our dream honeymoon, &#163;&#39;s not &#36;&#39;s please.</p>
             </div>
         </section>
 
@@ -49,11 +51,11 @@
         <section>
             <div class="map-wrapper">
                 <div class="map-title">
-                    <h2>The Locations</h2>
+                    <h3>The Locations</h3>
                 </div>
                 <div class="map-address-left">
                     <div class="church-address">
-                        <h3>Church of St. Mary</h3>
+                        <h4>Church of St. Mary</h4>
                         <p>
                             Coach Drive
                             <br>
@@ -64,25 +66,25 @@
                             CB23 1EN
                             <br>
                         </p>
-                        <a href="http://www.harltonvillage.org.uk/" target="_blank">Visit church website</a>
+                        <a href="http://www.harltonvillage.org.uk/" target="_blank">harltonvillage.org.uk</a>
                     </div>
                 </div>
                 <div id="map"></div>
                 <div class="map-address-right">
-                            <div class="venue-address">
-                                <h3>The Manor Barn</h3>
-                                <p>
-                                    Washpit Lane
-                                    <br>
-                                    Harlton
-                                    <br>
-                                    Cambridge
-                                    <br>
-                                    CB23 1EY
-                                    <br>
-                                </p>
-                                <a href="http://themanorbarn.com/" target="_blank">Visit venue website</a>
-                            </div>
+                    <div class="venue-address">
+                        <h4>The Manor Barn</h4>
+                        <p>
+                            Washpit Lane
+                            <br>
+                            Harlton
+                            <br>
+                            Cambridge
+                            <br>
+                            CB23 1EY
+                            <br>
+                        </p>
+                        <a href="http://themanorbarn.com/" target="_blank">themanorbarn.com</a>
+                    </div>
                 </div>
             </div>
 
@@ -150,72 +152,66 @@
         <!--sleeping + travelling-->
 
         <section class="sleeping">
-            <h2>Sleeping + Travelling</h2>
+            <h3>Accommodation &#38; Travel</h3>
             <div class="sleeping-list">
                 <div class="sleeping-item">
-                    <h3>Hotel One</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>IBIS</h4>
+                    <p>Cambridge Station<br>CB1 2GA<br>01223 320 960</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="http://www.accorhotels.com/gb/hotel-8548-ibis-cambridge-central-station-/index.shtml" target="_blank">accorhotels.com</a>
                 </div>
                 <div class="sleeping-item">
-                    <h3>Hotel Two</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>Holiday Inn</h4>
+                    <p>Cambridge outskirts<br>CB24 9PH<br>0871 942 9015</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="https://www.ihg.com/holidayinn/hotels/gb/en/cambridge/cbgim/hoteldetail" target="_blank">hicambridgehotel.co.uk </a>
                 </div>
                 <div class="sleeping-item">
-                    <h3>Hotel Three</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>Arundel House</h4>
+                    <p>Central Cambridge<br>CB4 3AN<br>01223 367 701</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="http://www.arundelhousehotel.co.uk/" target="_blank">arundelhousehotel.co.uk</a>
                 </div>
                 <div class="sleeping-item">
-                    <h3>Hotel Four</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>Lensfield Hotel</h4>
+                    <p>Central Cambridge<br>CB2 1EN<br>01223 355 017</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="http://www.lensfieldhotel.co.uk/" target="_blank">lensfieldhotel.co.uk</a>
                 </div>
                 <div class="sleeping-item">
-                    <h3>Hotel Five</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>The Gonville</h4>
+                    <p>Central Cambridge<br>CB2 1LY<br>01223 366 611</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="http://www.gonvillehotel.co.uk/" target="_blank">gonvillehotel.co.uk</a>
                 </div>
                 <div class="sleeping-item">
-                    <h3>Hotel Six</h3>
-                    <p>address line one<br>address line two</p>
+                    <h4>Regent Hotel</h4>
+                    <p>Central Cambridge<br>CB2 1AB<br>01223 351 470</p>
                     <br>
-                    <a href="#" >Hotel Website</a>
+                    <a href="https://www.regenthotel.co.uk/" target="_blank">regenthotel.co.uk</a>
                 </div>
             </div>
             <div class="travel-list">
                 <div class="travel-item">
-                    <h3>Panther Taxis</h3>
-                    <p>(01223) 715715</p>
+                    <h4>Panther Taxis</h4>
+                    <p>01223 715715</p>
                     <br>
                     <a href="https://www.panthertaxis.co.uk/" target="_blank">Book a Panther Taxi</a>
                 </div>
                 <div class="travel-item">
-                    <h3>A1 Cabco Taxis</h3>
-                    <p>(01223) 313131</p>
+                    <h4>A1 Cabco Taxis</h4>
+                    <p>01223 313131</p>
                     <br>
                     <a href="http://www.a1cabco.co.uk/" target="_blank">Book a A1 Cabco Taxi</a>
                 </div>
                 <div class="travel-item">
-                    <h3>CamCab Taxis</h3>
-                    <p>(01223) 706515</p>
+                    <h4>CamCab Taxis</h4>
+                    <p>01223 706515</p>
                     <br>
                     <a href="http://www.camcab.co.uk/" target="_blank">Book a CamCab Taxi</a>
                 </div>
-                <div class="travel-item">
-                    <h3>The Trainline</h3>
-                    <p>copy in here</p>
-                    <br>
-                    <a href="https://www.thetrainline.com/" target="_blank">Buy your train tickets</a>
-                </div>
                 <div class="travel-info">
-                    <p>For those using taxis we would suggest booking in advance, as Cambridge taxi companies are very busy on Saturday nights.</p>
+                    <p>We advise pre-booking with a locally listed taxi company in advance of the day, as Cambridge taxi companies can get particularly busy on Saturday nights.</p>
                 </div>
             </div>
         </section>
@@ -223,26 +219,32 @@
         <!--make it a weekend-->
 
         <section class="weekend">
-            <h2>Make it a weekend</h2>
+            <h3>Make it a weekend</h3>
             <div class="weekend-list">
-                <div class="weekend-item">
-                    <img src="" alt="Punting in Cambridge"/>
-                    <p>Go punting in Cambridge</p>
+                <div class="weekend-item-garden">
+                    <img class="item-garden" src="images/Gardens.png" alt="The Botanical Gardens"/>
+                    <h4>Plants</h4>
+                    <p>Observe the perenials at the Cambridge Botantical Gardens</p>
                 </div>
-                <div class="weekend-item">
-                    <img src="" alt="Punting in Cambridge"/>
-                    <p>Go punting in Cambridge</p>
+                <div class="weekend-item-punt">
+                    <img class="item-punt" src="images/Punting.png" alt="Punting on the Cam"/>
+                    <h4>Punting</h4>
+                    <p>Stand in oar as you glide past the famous universities</p>
                 </div>
-                <div class="weekend-item">
-                    <img src="" alt="Punting in Cambridge"/>
-                    <p>Go punting in Cambridge</p>
+                <div class="weekend-item-picnic">
+                    <img class="item-picnic" src="images/Picnic.png" alt="Picnics in the Park"/>
+                    <h4>Picnics</h4>
+                    <p>Scotch eggs by the dozen, on the tartan</p>
                 </div>
-                <div class="weekend-item">
-                    <img src="" alt="Punting in Cambridge"/>
-                    <p>Go punting in Cambridge</p>
+                <div class="weekend-item-mill">
+                    <img class="item-mill" src="images/The-Mill.png" alt="The Mill"/>
+                    <h4>Pints</h4>
+                    <p>Drink in the chilled out atmosphere by The River Cam</p>
                 </div>
             </div>
-            <p>Built by us</p>
+            <div class="credit">
+                <p>Built by Katt and Dave, for Katt and Dave</p>
+            </div>
         </section>
     </body>
 </html>
