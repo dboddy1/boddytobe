@@ -3,12 +3,36 @@
     position: relative;
 }
 
-.RSVP-image-left, .RSVP-image-right {
-    width: 0;
+.RSVP-image-left {
+    width: 3%;
+    height: 1100px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('backgroundimages/background-left.png');
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 
+.RSVP-image-right {
+    width: 3%;
+    height: 1100px;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('backgroundimages/background-right.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+}   
+
+/*.RSVP-image-left, .RSVP-image-right {
+    width: 0;
+}*/
+
 .RSVP-form {
-    width: 90%;
+    width: 85%;
     margin: 50px auto 0;
     text-align: center;
 }
@@ -30,21 +54,24 @@
 }
 
 .selection label {
+    font-size: 1.2em;
+    padding: 10px;
     display:inline-block;
-    border-bottom: 5px solid #80b5b3;
     cursor: pointer;
+    letter-spacing: 0.1em;
+    border: 1px solid #f8f9e7;
 }
 
 .selection input[type="radio"]:checked + label { 
-    border-bottom: 5px solid #9BC5C3;
+     border: 1px solid rgba(255, 123, 68, 0.7);
 }
 
 label {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
+    /*font-family: 'EB Garamond', serif;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
     line-height: 1.1em;
     color: #000000;
     text-align: center;
@@ -57,7 +84,7 @@ label {
 }
 
 label[for="emotion"] {
-    margin: 50px 0 20px;
+    margin: 50px 0 13px;
 }
 
 label[for="emotion_after"] {
@@ -65,48 +92,50 @@ label[for="emotion_after"] {
 }
 
 input {
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
+    /*font-family: 'EB Garamond', serif;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
     line-height: 1.1em;
-    width: 92%;
-    color: #467372;
+    width: 80%;
+    color: #505050;
     cursor:pointer;
     text-align: center;
 }
 
 input#emotion {
-    width: 80%;
+    width: 74%;
+}
+
+input[type=text] {
+    font-weight: normal;
+    border: none;
+    border-bottom: 1px dotted #b4b5a5;
+    /*-webkit-box-shadow: ;
+    -moz-box-shadow: ;*/
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    height: 30px;
+    padding: 8px 16px 10px;
+    margin: 0;
+    cursor: pointer;
 }
 
 input#name {
     margin-top: 20px;
-}
-
-input[type=text] {
-    font-weight: 500;
-    border: none;
-    border-bottom: 2px solid #80b5b3;
-    /*-webkit-box-shadow: ;
-    -moz-box-shadow: ;*/
-    box-shadow: none;
-    border-radius: 2px; 
-    padding: 18px 20px;
-    background: #9bc5c3;
-    margin: 0;
-    cursor: pointer;
+    font-style: italic;
 }
 
 input[type=submit] {
     color: #ffffff;
     text-align: center;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    /*font-family: 'EB Garamond', serif;*/
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.2em;
     margin: 30px 0;
     padding:20px 40px;
-    background-image:linear-gradient(45deg, #80b5b3, #75a7a5); 
+    background-color: rgba(255, 47, 23, 0.2);
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 2px;
@@ -116,35 +145,36 @@ input[type=submit] {
 /* Placeholder Styling Starts */
 
 ::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #b4b5a5;
     text-align: center;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     font-weight: 100;
 
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: #ffffff;
+    color: #b4b5a5;
     text-align: center;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     font-weight: 100;
-    font-size: 1.8em;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: #ffffff;
+    color: #b4b5a5;
     text-align: center;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     font-weight: 100;
-    font-size: 1.8em;
 }
 
 :-ms-input-placeholder {  
-    color: #ffffff;
+    color: #b4b5a5;
     text-align: center;
-    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     font-weight: 100;
-    font-size: 1.8em;
 }
 
 /* Placeholder Styling Ends */
@@ -159,64 +189,27 @@ input:active {
 input:focus {outline:0;}
 
 textarea:focus, input:focus {
-    border-bottom: 2px solid #467372;
+    border-bottom: 1px solid #b4b5a5;
+}
+
+input[type=submit]:focus {
+    outline: none;
+    border: none;   
 }
 
 /* Focus Styling Ends */
 
-    @media (min-width: 600px) {
+    @media (min-width: 500px) {
 
-    .RSVP-image-left {
-        width: 5%;
-        height: 1100px;
-        float: left;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url('backgroundimages/background-left.png');
-        background-position: left top;
-        background-repeat: no-repeat;
+        input#emotion {
+            width: 55%;
+        }
+
     }
 
-    .RSVP-image-right {
-        width: 5%;
-        height: 1100px;
-        float: left;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url('backgroundimages/background-right.png');
-        background-position: right top;
-        background-repeat: no-repeat;
-    } 
+        @media (min-width: 600px) {
 
-    .RSVP-form {
-        max-width: 500px;
-        margin: 50px auto 0;
-        text-align: center;
-    }
-
-    .RSVP p {
-        width: 50%;
-        padding: 20px 0 40px;
-    }
-
-    input {
-        max-width: 500px;
-    }
-
-    input#emotion{
-        width: 84%;
-    }
-
-    input#name {
-        margin-top: 20px;
-        width: 60%;
-    }
-
-        @media (min-width: 750px) {
-
-         .RSVP-image-left {
+        .RSVP-image-left {
             width: 10%;
             height: 1100px;
             float: left;
@@ -238,19 +231,44 @@ textarea:focus, input:focus {
             background-image: url('backgroundimages/background-right.png');
             background-position: right top;
             background-repeat: no-repeat;
-        }   
-    
-            @media (min-width: 900px) {
+        } 
 
-            .RSVP-form {
-                max-width: 700px;
-                margin: 50px auto 0;
-                text-align: center;
-            }
+        .RSVP-form {
+            max-width: 640px;
+            margin: 50px auto 0;
+            text-align: center;
+        }
+
+        .RSVP p {
+            width: 70%;
+            padding: 20px 0 40px;
+        }
+
+        input {
+            max-width: 500px;
+        }
+
+        input[type=text] {
+            margin-top: 7px;
+        } 
+
+        input#emotion{
+            width: 58%;
+        }
+
+        input#name {
+            margin-top: 20px;
+            /*width: 60%;*/
+        }
+
+        input[type=submit]:hover {
+            background:rgba(255, 123, 68, 0.7); 
+        }
+
+            @media (min-width: 750px) {
 
             .RSVP-image-left {
-                z-index: -1;
-                width: 30%;
+                width: 10%;
                 height: 1100px;
                 float: left;
                 position: absolute;
@@ -262,8 +280,7 @@ textarea:focus, input:focus {
             }
 
             .RSVP-image-right {
-                z-index: -1;
-                width: 30%;
+                width: 10%;
                 height: 1100px;
                 float: left;
                 position: absolute;
@@ -272,37 +289,72 @@ textarea:focus, input:focus {
                 background-image: url('backgroundimages/background-right.png');
                 background-position: right top;
                 background-repeat: no-repeat;
-            }
-
-            .RSVP p {
-                width: 40%;
-                padding: 20px 0 100px;
-            }
-
-            input {
-                max-width: 75%;
-            }
-
-            input[type=text] {
-                background-color: rgba(0, 0, 0, 0);
             }   
+        
+                @media (min-width: 900px) {
 
-            input#emotion{
-                margin-top: 40px;
-                width: 50%;
-            }
+                .RSVP-form {
+                    max-width: 700px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
 
-            input#diet {
-                width: 30%;
-                margin: 40px 0 0;
-                text-align: left;
-            }
+                .RSVP-image-left {
+                    z-index: -1;
+                    width: 30%;
+                    height: 1100px;
+                    float: left;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: url('backgroundimages/background-left.png');
+                    background-position: left top;
+                    background-repeat: no-repeat;
+                }
 
-            input#name {
-                margin-top: 20px;
-                width: 75%;
-            }
+                .RSVP-image-right {
+                    z-index: -1;
+                    width: 30%;
+                    height: 1100px;
+                    float: left;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-image: url('backgroundimages/background-right.png');
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                }
 
-            input[type=submit]:hover {
-                background:#467372; 
-            }
+                .RSVP p {
+                    width: 40%;
+                    padding: 20px 0 100px;
+                }
+
+                input {
+                    max-width: 75%;
+                }  
+
+                input#emotion{
+                    margin-top: 40px;
+                    width: 56%;
+                }
+
+                input#diet {
+                    width: 44%;
+                    margin: 30px 0 0;
+                    text-align: left;
+                }
+
+                input#name {
+                    margin-top: 20px;
+                    width: 75%;
+                }
+
+                input[type=submit] {
+                    text-align: center;
+                    /*font-family: 'EB Garamond', serif;*/
+                    font-family: 'Cormorant Garamond', serif;
+                    width: 75%;
+                    -webkit-border-radius: 2px;
+                    border-radius: 2px;
+                }

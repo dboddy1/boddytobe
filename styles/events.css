@@ -2,7 +2,7 @@
     display: block;
 }
 
-.weekend h2{
+.weekend h3{
     padding: 50px 0;
 }
 
@@ -17,13 +17,15 @@
     width: 100%;
   	flex-shrink: 0;
     height: 300px;
-    background-color: blue;
     margin-bottom: 20px;
 }
 
 .weekend-item p {
-        /*position: absolute;*/
         bottom: 0;
+}
+
+.credit {
+    margin: 100px 0 20px;
 }
 
     @media (min-width: 650px) {
@@ -45,16 +47,29 @@
 		flex-shrink: 0;
         position: relative;
         height: 300px;
-        background-color: green;
     }
 
         @media (min-width: 1000px) {
 
-        .weekend-item {
+        .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill {
             display:inline-block;
-            width: calc(25% - 10px);
+            width: calc(22% - 5px);
             flex-shrink: 0;
-            position: relative;
             height: 300px;
-            background-color: white;
+        }
+
+        .item-garden, .item-punt, .item-picnic, .item-mill {
+            max-width: 100%;
+        }        
+
+        .weekend-item-list h4 {
+            margin-top: 20px;
+            position: relative;
+            top: 0;
+        }
+
+        .weekend-list p {
+            position: relative;
+            top: 0;
+            line-height: 1.5em;
         }

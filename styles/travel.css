@@ -1,45 +1,60 @@
 .sleeping {
     display: block;
     text-align: center;
-    background-image:linear-gradient(120deg, #f1beb2, #fde4ad);
+    background-color: #f8f9e7;
     border: 20px solid white;
 }
 
-.sleeping h2{
+.sleeping h3{
     padding: 50px 0;
 }
 
 .sleeping-list, .travel-list {
     display: flex;
 	flex-wrap: wrap;
-    justify-content: space-between;
-	align-content: space-between;
+    justify-content: center;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 auto;
 }
 
-.sleeping-list {
-    margin-bottom: 20px;
+.sleeping-list a, .travel-list a {
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 20px 40px;
+    width: 80%;
+    background-color: rgba(255, 47, 23, 0.2);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 
-.sleeping h2{
-    padding: 50px 0;
+.travel-list a {
+    background-color: rgb(164, 207, 214);
 }
 
 .sleeping-item, .travel-item {
     width: 100%;
   	flex-shrink: 0;
-    margin-bottom: 40px
+    margin-bottom: 50px
 }
 
-.sleeping-item h3 {
-    margin-bottom: 20px;
+.sleeping p {
+    margin-bottom: 10px;
 }
 
 .travel-list {
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     padding-top: 60px;
+    background-color: #cbeff5;
 }
 
 .travel-info {
@@ -47,37 +62,46 @@
      margin: 0 auto 40px;
 }
 
-    @media (min-width: 450px) {
+    @media (min-width: 500px) {
 
         .sleeping-item, .travel-item {
             width: calc(50% - 20px);
             flex-shrink: 0;
-            margin-bottom: 40px
+            margin-bottom: 60px;
+            padding: 0;
+        }
+
+        .sleeping-list a, .travel-list a {
+            color: rgb(255, 149, 134);
+            padding: 0;
+            background-color: rgba(255, 149, 134, 0);
+        }
+
+        .travel-list a {
+            color: rgb(110, 171, 181);
+        }
+
+        .sleeping-list a:hover, .travel-list a:hover {
+            border-bottom: 1px solid rgb(255, 149, 134);
+            border-radius: none;
+        }
+
+        .travel-list a:hover {
+            border-bottom: 1px solid rgb(110, 171, 181);
         }
     
-        @media (min-width: 650px) {
+        @media (min-width: 750px) {
 
-            .sleeping h2{
-                padding: 60px 0;
+            .sleeping h3{
+                padding: 80px 0 60px;
             }
 
-            .sleeping-list{
-                margin: 0 50px;
-            }
-
-            .sleeping-item {
-                width: calc(30% - 20px);
+            .sleeping-item, .travel-item {
+                width: calc(32% - 5px);
                 flex-shrink: 0;
-                margin-bottom: 40px
             }
 
             @media (min-width: 900px) {
-
-            .travel-item {
-                width: calc(25% - 10px);
-                flex-shrink: 0;
-                margin-bottom: 40px
-            }
 
             .travel-info {
                 max-width: 600px;
@@ -85,14 +109,13 @@
 
             @media (min-width: 1000px) {
 
-            .sleeping-list{
-                margin: 0 auto 20px;
-                /*max-width: 900px;*/
+            .sleeping-list, .travel-list{
+                margin: 0 auto;
                 padding: 0 7%;
             }
 
             .travel-list {
-                padding: 60px 10% 0;
+                padding-top: 60px;
             }
 
             .travel-info {
