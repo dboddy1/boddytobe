@@ -27,10 +27,6 @@
     background-repeat: no-repeat;
 }   
 
-/*.RSVP-image-left, .RSVP-image-right {
-    width: 0;
-}*/
-
 .RSVP-form {
     width: 85%;
     margin: 50px auto 0;
@@ -67,7 +63,6 @@
 }
 
 label {
-    /*font-family: 'EB Garamond', serif;*/
     font-family: 'Cormorant Garamond', serif;
     font-weight: normal;
     font-size: 1.4em;
@@ -92,7 +87,6 @@ label[for="emotion_after"] {
 }
 
 input {
-    /*font-family: 'EB Garamond', serif;*/
     font-family: 'Cormorant Garamond', serif;
     font-weight: normal;
     font-size: 1.4em;
@@ -130,12 +124,12 @@ input#name {
 input[type=submit] {
     color: #ffffff;
     text-align: center;
-    /*font-family: 'EB Garamond', serif;*/
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 0.2em;
     margin: 30px 0;
     padding:20px 40px;
-    background-color: rgba(255, 47, 23, 0.2);
+    background-color: rgba(255, 123, 68, 0.7);
+    /*background-color: rgba(255, 47, 23, 0.2);*/
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 2px;
@@ -261,6 +255,10 @@ input[type=submit]:focus {
             /*width: 60%;*/
         }
 
+        input[type=submit] {
+            background-color: rgba(255, 47, 23, 0.2);
+        }
+
         input[type=submit]:hover {
             background:rgba(255, 123, 68, 0.7); 
         }
@@ -352,7 +350,6 @@ input[type=submit]:focus {
 
                 input[type=submit] {
                     text-align: center;
-                    /*font-family: 'EB Garamond', serif;*/
                     font-family: 'Cormorant Garamond', serif;
                     width: 75%;
                     -webkit-border-radius: 2px;
