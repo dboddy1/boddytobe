@@ -2,11 +2,12 @@
 Boddy To Be wedding website
 
 Writen by David Boddy
-My first attempted at a fully functioning website
+My first attempt at a fully functioning website
 
 Sections:
+* Title and Date section
 * RVSP Form
-* Maps and Directions
-* Sleeping
-* Travelling
-* Make it a Weekend
+* Google Maps api and Directions
+* Accommodation
+* Travel
+* Weekend Activites
