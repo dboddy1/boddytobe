@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="styles/map.css">
         <link rel="stylesheet" href="styles/travel.css">
         <link rel="stylesheet" href="styles/events.css">
-        <link rel="icon" type="image/ico" href="#">
-        <!--<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>-->
+        <link rel="shortcut icon" href="images/boddytobe.ico" type="image/x-icon">
+        <link rel="icon" href="images/boddytobe.ico" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -22,8 +22,13 @@
             </div>
             <div class="RSVP-image-right"></div>
         </header>
+
+        <!--RSVP Form section start-->
+
         <section class="RSVP">
-            <!--method="post" action="/form-to-email.php"-->
+
+            <!--I need help getting this form to post the users entry to our email address 'boddytobe@gmail.com'-->
+
             <form class="RSVP-form"  name="weddingRSVP" >
                 <div class="selection">
                     <label for="yes">HELL YEAH!</label>
@@ -32,11 +37,11 @@
                     <input type="radio" id="no" name="attending" value="false" />
                 </div>
                 <br>
-                <label for="emotion">I / We are</label><input id="emotion" type="text" emotion="requirement"><label for="emotion_after">&nbsp;to</label><br>
-                <input id="reasonlineone" type="text" reason="requirement"><br>
+                <label for="emotion">I / We are</label><input id="emotion" type="text" emotion="requirement" ><br>
+                <input id="reasonlineone" type="text" reason="requirement" ><br>
                 <input id="reasonlinetwo" type="text" ><br>
-                <label for="diet">Please note that I&#39;m a&nbsp;</label><input id="diet" type="text" diet="requirement"><br>
-                <label for="name">Peace and love,</label></br><input id="name" type="text" name="fullname" placeholder="Sign your names here" /><br>
+                <label for="diet">Please note that I&#39;m&nbsp;</label><input id="diet" type="text" diet="requirement"><br>
+                <label for="name">Peace and love,</label></br><input id="name" type="text" name="fullname" placeholder="Sign your name&#40;s&#41; here" /><br>
                 <input type="submit" value="RSVP">
             </form>
             <div>
@@ -44,7 +49,8 @@
             </div>
         </section>
 
-        <!--google maps-->
+        <!--RSVP Form section ends-->
+        <!--Locations section starts-->
 
         <section>
             <div class="map-wrapper">
@@ -86,45 +92,13 @@
                 </div>
             </div>
 
-<!--Adding multiple markers code-->
-
-            <!--<script type="text/javascript">
-                var locations = [
-                    ['Church of St Mary', 52.15362, 0.0240807, 1],
-                    ['Coogee Beach', -33.923036, 151.259052, 2],
-                    ];
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
-                center: new google.maps.LatLng(52.153623, 0.0240807),
-                // mapTypeControl: false,
-                streetViewControl: false
-                // mapTypeId: google.maps.MapTypeId.ROADMAP
-                });
-
-                var infowindow = new google.maps.InfoWindow();
-                var image = 'images/map-marker.png';
-                var marker, i;
-
-                for (i = 0; i < locations.length; i++) { 
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                    map: map,
-                    icon: image
-                });
-
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                    }
-                })(marker, i));
-                }
-            </script>-->
+            <!--Google Maps integretion starts-->
+            <!--I need help getting adding a second marker for the barn location into the google code below, I have the longitude and latitude already below -->
 
             <script>
             function initMap() {
-                var church = {lat: 52.153623, lng: 0.0240807};
+                var church = {lat: 52.153635, lng: 0.026264};
+                // var barn = {lat: 52.154114, lng: 0.024478};
                 var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
                 center: church,
@@ -145,9 +119,12 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPypMbge_vDB-mgY4qBMfeVGGag36AT5c&callback=initMap">
             </script>
 
+            <!--Google Maps integretion ends-->
+
         </section>
 
-        <!--sleeping + travelling-->
+        <!--Locations section ends-->
+        <!--Sleeping & Travelling section starts-->
 
         <section class="sleeping">
             <h3>Accommodation &#38; Travel</h3>
@@ -211,7 +188,8 @@
             </div>
         </section>
 
-        <!--make it a weekend-->
+        <!--Sleeping & Travelling section ends-->
+        <!--Make it a weekend section starts-->
 
         <section class="weekend">
             <h3>Make it a weekend</h3>
@@ -219,7 +197,7 @@
                 <div class="weekend-item-garden">
                     <img class="item-garden" src="images/Gardens.png" alt="The Botanical Gardens"/>
                     <h4>Plants</h4>
-                    <p>Observe the perenials at the Cambridge Botantical Gardens</p>
+                    <p>Observe the perennials in the Cambridge Botanical Gardens</p>
                 </div>
                 <div class="weekend-item-punt">
                     <img class="item-punt" src="images/Punting.png" alt="Punting on the Cam"/>
@@ -229,18 +207,21 @@
                 <div class="weekend-item-picnic">
                     <img class="item-picnic" src="images/Picnic.png" alt="Picnics in the Park"/>
                     <h4>Picnics</h4>
-                    <p>Scotch eggs by the dozen, on the tartan</p>
+                    <p>Scotch eggs by the dozen, down on the tartan</p>
                 </div>
                 <div class="weekend-item-mill">
                     <img class="item-mill" src="images/The-Mill.png" alt="The Mill"/>
                     <h4>Pints</h4>
-                    <p>Drink in the chilled out atmosphere by The River Cam</p>
+                    <p>Drink in the chilled atmosphere by The River Cam</p>
                 </div>
             </div>
             <div class="credit">
-                <p>Built by Katt and Dave, for Katt and Dave</p>
+                <p>Built by Katt &#38; Dave &#169;2017</p>
             </div>
         </section>
+
+        <!--Make it a weekend section ends-->
+
     </body>
 </html>
 
