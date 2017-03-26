@@ -45,6 +45,9 @@
     border: 0 none;
 }
 
+/*Radio Button override styling starts*/
+/*I want to override the default browser radio button styling I can't seem to get it to configured properly*/
+
 .selection input[type="radio"] {
     display: none; 
 }
@@ -58,9 +61,13 @@
     border: 1px solid #f8f9e7;
 }
 
+/*simple selection styling (default should have 'Hell Yeah!' as the preselected state*/
+
 .selection input[type="radio"]:checked + label { 
      border: 1px solid rgba(255, 123, 68, 0.7);
 }
+
+/*Radio Button override styling ends*/
 
 label {
     font-family: 'Cormorant Garamond', serif;
@@ -99,7 +106,7 @@ input {
 }
 
 input#emotion {
-    width: 74%;
+    width: 80%;
 }
 
 input[type=text] {
@@ -129,7 +136,6 @@ input[type=submit] {
     margin: 30px 0;
     padding:20px 40px;
     background-color: rgba(255, 123, 68, 0.7);
-    /*background-color: rgba(255, 47, 23, 0.2);*/
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 2px;
@@ -140,9 +146,10 @@ input[type=submit] {
 
 ::-webkit-input-placeholder {
     color: #b4b5a5;
+    letter-spacing: 0.01em;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 100;
 
 }
@@ -151,7 +158,7 @@ input[type=submit] {
     color: #b4b5a5;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 100;
 }
 
@@ -159,7 +166,7 @@ input[type=submit] {
     color: #b4b5a5;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 100;
 }
 
@@ -167,7 +174,7 @@ input[type=submit] {
     color: #b4b5a5;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 100;
 }
 
@@ -196,74 +203,12 @@ input[type=submit]:focus {
     @media (min-width: 500px) {
 
         input#emotion {
-            width: 55%;
+            width: 60%;
         }
 
     }
 
         @media (min-width: 600px) {
-
-        .RSVP-image-left {
-            width: 10%;
-            height: 1100px;
-            float: left;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: url('backgroundimages/background-left.png');
-            background-position: left top;
-            background-repeat: no-repeat;
-        }
-
-        .RSVP-image-right {
-            width: 10%;
-            height: 1100px;
-            float: left;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-image: url('backgroundimages/background-right.png');
-            background-position: right top;
-            background-repeat: no-repeat;
-        } 
-
-        .RSVP-form {
-            max-width: 640px;
-            margin: 50px auto 0;
-            text-align: center;
-        }
-
-        .RSVP p {
-            width: 70%;
-            padding: 20px 0 40px;
-        }
-
-        input {
-            max-width: 500px;
-        }
-
-        input[type=text] {
-            margin-top: 7px;
-        } 
-
-        input#emotion{
-            width: 58%;
-        }
-
-        input#name {
-            margin-top: 20px;
-            /*width: 60%;*/
-        }
-
-        input[type=submit] {
-            background-color: rgba(255, 47, 23, 0.2);
-        }
-
-        input[type=submit]:hover {
-            background:rgba(255, 123, 68, 0.7); 
-        }
-
-            @media (min-width: 750px) {
 
             .RSVP-image-left {
                 width: 10%;
@@ -287,19 +232,48 @@ input[type=submit]:focus {
                 background-image: url('backgroundimages/background-right.png');
                 background-position: right top;
                 background-repeat: no-repeat;
-            }   
-        
-                @media (min-width: 900px) {
+            } 
 
-                .RSVP-form {
-                    max-width: 700px;
-                    margin: 0 auto;
-                    text-align: center;
-                }
+            .RSVP-form {
+                max-width: 640px;
+                margin: 50px auto 0;
+                text-align: center;
+            }
+
+            .RSVP p {
+                width: 70%;
+                padding: 20px 0 40px;
+            }
+
+            input {
+                max-width: 500px;
+            }
+
+            input[type=text] {
+                margin-top: 7px;
+            } 
+
+            input#emotion{
+                width: 63%;
+            }
+
+            input#name {
+                margin-top: 20px;
+            }
+
+            input[type=submit] {
+                background-color: rgba(255, 47, 23, 0.2);
+            }
+
+            input[type=submit]:hover {
+                background:rgba(255, 123, 68, 0.7); 
+            }
+        }
+
+            @media (min-width: 750px) {
 
                 .RSVP-image-left {
-                    z-index: -1;
-                    width: 30%;
+                    width: 10%;
                     height: 1100px;
                     float: left;
                     position: absolute;
@@ -311,8 +285,7 @@ input[type=submit]:focus {
                 }
 
                 .RSVP-image-right {
-                    z-index: -1;
-                    width: 30%;
+                    width: 10%;
                     height: 1100px;
                     float: left;
                     position: absolute;
@@ -321,37 +294,73 @@ input[type=submit]:focus {
                     background-image: url('backgroundimages/background-right.png');
                     background-position: right top;
                     background-repeat: no-repeat;
-                }
+                }   
+            }
+        
+                @media (min-width: 900px) {
 
-                .RSVP p {
-                    width: 40%;
-                    padding: 20px 0 100px;
-                }
+                    .RSVP-form {
+                        max-width: 700px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
 
-                input {
-                    max-width: 75%;
-                }  
+                    .RSVP-image-left {
+                        z-index: -1;
+                        width: 30%;
+                        height: 1100px;
+                        float: left;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-image: url('backgroundimages/background-left.png');
+                        background-position: left top;
+                        background-repeat: no-repeat;
+                    }
 
-                input#emotion{
-                    margin-top: 40px;
-                    width: 56%;
-                }
+                    .RSVP-image-right {
+                        z-index: -1;
+                        width: 30%;
+                        height: 1100px;
+                        float: left;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-image: url('backgroundimages/background-right.png');
+                        background-position: right top;
+                        background-repeat: no-repeat;
+                    }
 
-                input#diet {
-                    width: 44%;
-                    margin: 30px 0 0;
-                    text-align: left;
-                }
+                    .RSVP p {
+                        width: 40%;
+                        padding: 20px 0 100px;
+                    }
 
-                input#name {
-                    margin-top: 20px;
-                    width: 75%;
-                }
+                    input {
+                        max-width: 75%;
+                    }  
 
-                input[type=submit] {
-                    text-align: center;
-                    font-family: 'Cormorant Garamond', serif;
-                    width: 75%;
-                    -webkit-border-radius: 2px;
-                    border-radius: 2px;
+                    input#emotion{
+                        margin-top: 40px;
+                        width: 61%;
+                    }
+
+                    input#diet {
+                        width: 47%;
+                        margin: 30px 0 0;
+                        text-align: left;
+                    }
+
+                    input#name {
+                        margin-top: 20px;
+                        width: 75%;
+                    }
+
+                    input[type=submit] {
+                        text-align: center;
+                        font-family: 'Cormorant Garamond', serif;
+                        width: 75%;
+                        -webkit-border-radius: 2px;
+                        border-radius: 2px;
+                    }
                 }

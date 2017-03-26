@@ -62,7 +62,7 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 10px;
-    color: #999999;
+    color: rgb(110, 171, 181);
 }
 
 .travel-info {
@@ -104,10 +104,11 @@
             border-bottom: 1px solid rgb(45, 162, 181);
             border-radius: none;
         }
+    }
     
         @media (min-width: 750px) {
 
-            .sleeping h3{
+            .sleeping h3 {
                 padding: 60px 0 40px;
             }
 
@@ -115,30 +116,34 @@
                 width: calc(32% - 5px);
                 flex-shrink: 0;
             }
+        }
 
             @media (min-width: 900px) {
 
-            .travel-info {
-                max-width: 600px;
+                .travel-info {
+                    max-width: 600px;
+                }
             }
 
             @media (min-width: 1000px) {
 
-            .sleeping-list {
-                margin-bottom: 20px;
-                padding: 0 4%;
-            }
+                .sleeping-list {
+                    margin-bottom: 20px;
+                    padding: 0 4%;
+                }
 
-            .travel-list {
-                padding: 60px 4% 0;
-            }
+                .travel-list {
+                    padding: 60px 4% 0;
+                }
 
-            .travel-info {
-                max-width: 90%;
+                .travel-info {
+                    max-width: 90%;
+                }
             }
 
                 @media (min-width: 1300px) {
 
-                .sleeping-list, .travel-list {
-                    max-width: 1300px;
+                    .sleeping-list, .travel-list {
+                        max-width: 1300px;
+                    }
                 }

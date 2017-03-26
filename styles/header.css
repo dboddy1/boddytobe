@@ -34,6 +34,7 @@ header {
         .wedding-title-date {
             width: 40%;
         }
+    }
 
 
         @media (min-width: 750px) {
@@ -51,6 +52,7 @@ header {
             .wedding-title-names {
                 max-width: 90%;
             }
+        }
 
             @media (min-width: 1000px) {
 
@@ -59,6 +61,7 @@ header {
                     margin: 80px auto 0;
                     text-align: center;
                 }
+            }
 
                 @media (min-width: 1100px) {
 
@@ -80,3 +83,4 @@ header {
                         position: relative;
                         bottom: 20px;
                     }
+                }

@@ -13,6 +13,7 @@
 
 .weekend p {
     line-height: 1.4em;
+    margin: 0 40px;
 }
 
 .weekend-list {
@@ -32,68 +33,72 @@
     max-width: 100%;
 } 
 
-.weekend-item p {
-    bottom: 0;
-}
-
 .credit {
-    padding: 30px 0 20px;
+    padding: 30px 60px 20px;
 }
 
     @media (min-width: 500px) {
 
-    .weekend h2{
-        padding: 60px 0;
-    }
+        .weekend h2{
+            padding: 60px 0;
+        }
 
-    .weekend-list {
-		justify-content: space-between;
-		align-content: space-between;
-	}
+        .weekend p {
+            margin: 0;
+        }
 
-    .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill  {
-        display:inline-block;
-        width: 45%;
-		flex-shrink: 0;
-        position: relative;
+        .weekend-list {
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill  {
+            display:inline-block;
+            width: 45%;
+            flex-shrink: 0;
+            position: relative;
+        }
     }
 
         @media (min-width: 700px) {
 
-        .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill  {
-            width: calc(50% - 30px);
+            .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill  {
+                width: calc(50% - 30px);
+            }
         }
 
             @media (min-width: 1000px) {
 
-            .weekend-list {
-                max-width: 90%;
-            }
-            
-            .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill {
-                display:inline-block;
-                width: calc(22% - 5px);
-                flex-shrink: 0;
-            }
+                .weekend-list {
+                    max-width: 90%;
+                }
+                
+                .weekend-item-garden, .weekend-item-punt, .weekend-item-picnic, .weekend-item-mill {
+                    display:inline-block;
+                    width: calc(22% - 5px);
+                    flex-shrink: 0;
+                }
 
-            .item-garden, .item-punt, .item-picnic, .item-mill {
-                max-width: 100%;
-            }        
+                .item-garden, .item-punt, .item-picnic, .item-mill {
+                    max-width: 100%;
+                }        
 
-            .weekend-item-list h4 {
-                margin-top: 20px;
-                position: relative;
-                top: 0;
-            }
+                .weekend-item-list h4 {
+                    margin-top: 20px;
+                    position: relative;
+                    top: 0;
+                }
 
-            .weekend-list p {
-                position: relative;
-                top: 0;
-                line-height: 1.5em;
+                .weekend-list p {
+                    position: relative;
+                    top: 0;
+                    line-height: 1.5em;
+                }
             }
 
                 @media (min-width: 1300px) {
 
-                .weekend-list {
-                    max-width: 1300px;
+                    .weekend-list {
+                        max-width: 1300px;
+                    }
                 }

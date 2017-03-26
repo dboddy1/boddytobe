@@ -85,28 +85,29 @@ a:visited {
 
     @media (min-width: 650px) {
 
-    a {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1em;
-        letter-spacing: 0;
-        line-height: 2em;
-        color: #000000;
-        text-align: center;
-        margin: 0 auto;
-        text-decoration: none;
-        border: none;
-        border-radius: none;
-        border-bottom: 1px solid rgba(red, green, blue, 0);
-        padding-top: 10px;
-    }
+        a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1em;
+            letter-spacing: 0;
+            line-height: 2em;
+            color: #000000;
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: none;
+            border: none;
+            border-radius: none;
+            border-bottom: 1px solid rgba(red, green, blue, 0);
+            padding-top: 10px;
+        }
 
-    a:hover {
-        border-bottom: 1px solid #000000;
-        border-radius: none;
-    }
+        a:hover {
+            border-bottom: 1px solid #000000;
+            border-radius: none;
+        }
 
-    a:visited {
-        color: #000000;
-        border-bottom: 1px solid #000000;
-        border-radius: none;
+        a:visited {
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            border-radius: none;
+        }
     }
